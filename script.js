@@ -19,8 +19,12 @@ while (continueAdding) {
   let lastName = prompt('Add Last Name');
   let employeeSalary = prompt('Add Salary');
 
-  let salary = isNaN(parseFloat(employeeSalary)) ? 0: parseFloat
-  (employeeSalary);
+let salary = 0;
+
+let _tsalary = prompt("Get Salary");
+
+salary = (isNaN(_tsalary) || _tsalary === null) ? 0 :
+Number(_tsalary);
 
   employees.push({
     firstName: firstName,
