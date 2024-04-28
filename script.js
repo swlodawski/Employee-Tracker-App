@@ -52,6 +52,9 @@ currency: "USD"})}`);
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
+const randomIndex = Math.floor(Math.random() * employeesArray.length);
+const randomEmployee = employeesArray[randomIndex];
+console.log(`Congratulations you are the winner ${randomEmployee.firstName}`);
   // TODO: Select and display a random employee
 }
 
