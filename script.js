@@ -23,13 +23,12 @@ let salary = 0;
 
 let _tsalary = prompt("Get Salary");
 
-salary = (isNaN(_tsalary) || _tsalary === null) ? 0 :
-Number(_tsalary);
+salary = (isNaN(_tsalary) || _tsalary === null) ? 0 : Number(_tsalary);
 
   employees.push({
     firstName: firstName,
     lastName: lastName,
-    employeeSalary: employeeSalary
+    salary: salary
   });
 
   continueAdding = confirm('Do You Want to Add Another Employee?');
@@ -53,8 +52,6 @@ currency: "USD"})}`);
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-const randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)];
-console.log(employeesArray[(Math.floor(Math.random() * employeesArray.length))]);
   // TODO: Select and display a random employee
 }
 
